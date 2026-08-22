@@ -54,7 +54,7 @@ codex --version</code></pre>
       <section id="troubleshooting">
         <h2>Troubleshooting</h2>
         <h3>“Native host not found”</h3>
-        <p>Install or reinstall the companion, confirm the installer reports success, fully quit and reopen Chrome, and use the release's <code>verify-native-host.mjs</code> command. A companion built for a different Store extension ID will be refused.</p>
+        <p>Install or reinstall the companion, confirm the installer reports success, fully quit and reopen the browser, and run <code>node scripts/smoke-installed-host.mjs</code> from the extracted release. A companion built for a different Store extension ID will be refused.</p>
         <h3>“Codex not found”</h3>
         <p>Run <code>codex --version</code> in Terminal. Install or repair Codex CLI, then reinstall the companion so it records the correct executable.</p>
         <h3>Sign-in does not finish</h3>
